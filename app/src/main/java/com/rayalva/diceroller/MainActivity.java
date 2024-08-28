@@ -202,7 +202,18 @@ public class MainActivity extends AppCompatActivity implements RollLengthDialogF
 
         @Override
         public boolean onFling(MotionEvent el, MotionEvent e2, float velocityX, float velocityY) {
-            rollDice();
+            if (velocityY > 0) {
+                rollDice();
+            }
+            return true;
+        }
+
+        @Override
+        public boolean onDoubleTap(MotionEvent event) {
+            for (int i = 0; i < mVisibleDice; i++) {
+                mDice[i].addOne();
+            }
+            showDice();
             return true;
         }
     }
