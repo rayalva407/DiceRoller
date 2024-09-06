@@ -2,6 +2,8 @@
 
 ![Dice Roller](https://github.com/user-attachments/assets/20239857-e886-450d-9c26-6e3a8a951480)
 
+A fun mobile app for whenever you are in the need for some dice.
+
 ## Features
 
   - Use up to 3 dice.
